@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-require("/home/vcap/app/htdocs/vendor/autoload.php");
-require("/home/vcap/app/htdocs/application/models/ustream_api.php");
+require($_SERVER["DOCUMENT_ROOT"]."/vendor/autoload.php");
+require($_SERVER["DOCUMENT_ROOT"]."/application/models/ustream_api.php");
 
 class Dashboard extends CI_Controller {
      public function __construct() {
